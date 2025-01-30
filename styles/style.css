@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+:root {
+    --color-primario: #131010;
+    --color-secundario: #FFF0DC;
+    --color-terciario: #F0BB78;
+    --color-hover: #001F3F;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'krona One', sans-serif;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,8 +19,8 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color:#f6f6f6;
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
 }
 
 .header {
@@ -21,10 +33,10 @@ body {
 }
 
 .header__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--color-terciario);
     text-decoration: none;
 }
 
@@ -44,16 +56,16 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
 }
 
 .titulo__destaque{
-    color: #22d4fd;
+    color: var(--color-terciario);
 }
 
 .presentacion__contenido__texto {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces {
@@ -65,7 +77,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulo {
-    font-family: 'krona One', sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400;
 }
@@ -75,28 +87,28 @@ body {
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #f6f6f6;
-    border: 2px solid #22d4fd;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 .presentacion__enlaces__link:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
     padding: 3%;
 }
 
 .footer {
-    background-color: #22d4fd;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: #000000;
+    color: var(--color-primario);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400;
 }
